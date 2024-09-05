@@ -1,0 +1,425 @@
+/* Globale stilarter for at sikre, at alle elementer starter med ens marginer og padding */
+* {
+    box-sizing: border-box; /* Sikrer, at padding og border er inkluderet i elementers bredde/højde */
+    margin: 0; /* Fjerner standard margin */
+    padding: 0; /* Fjerner standard padding */
+}
+
+/* Grundlæggende styling for body-elementet */
+body {
+    font-family: Arial, sans-serif; /* Sætter skrifttypen til Arial eller en sans-serif fallback */
+    background-color: #ffffff; /* Hvid baggrundsfarve */
+    color: #000000; /* Sort tekstfarve */
+    line-height: 1.6; /* Indstiller linjehøjden for bedre læsbarhed */
+}
+
+/* Stilarter for navigationslinjen (navbar) */
+.navbar {
+    display: flex; /* Brug flexbox til layout */
+    justify-content: space-between; /* Placerer elementer jævnt mellem hinanden */
+    align-items: center; /* Centrerer elementerne vertikalt */
+    padding: 20px; /* Indsætter polstring omkring navigationslinjen */
+    background-color: #f8f8f8; /* Lys grå baggrundsfarve */
+}
+
+/* Stilarter for logoet i navigationslinjen */
+.logo img {
+    width: 150px; /* Bredden på logoet */
+    height: auto; /* Automatisk højde for at bevare aspektforholdet */
+}
+
+/* Stilarter for navigationslinks */
+.nav-links {
+    list-style: none; /* Fjerner punkttegn fra listen */
+    display: flex; /* Flexbox layout for links */
+    gap: 20px; /* Mellemrum mellem links */
+}
+
+/* Styling for individuelle links i navigationslinjen */
+.nav-links li a {
+    text-decoration: none; /* Fjerner understregning */
+    color: #333333; /* Mørk grå tekstfarve */
+    font-size: 16px; /* Størrelsen på teksten */
+    font-weight: bold; /* Fed skrift */
+    transition: color 0.3s ease; /* Glat farveovergang ved hover */
+}
+
+/* Ændrer linkfarve, når man holder musen over dem */
+.nav-links li a:hover {
+    color: #f25c24; /* Orange farve ved hover */
+}
+
+/* Stilarter for sociale ikoner i kontaktsektionen */
+.contact-social {
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Centrerer elementer vertikalt */
+}
+
+/* Stilarter for de sociale ikoner */
+.social-icons {
+    display: flex; /* Flexbox layout */
+    gap: 15px; /* Mellemrum mellem ikoner */
+}
+
+/* Stilarter for billederne, der repræsenterer sociale ikoner */
+.social-icons a img {
+    width: 24px; /* Bredden på ikonerne */
+    height: 24px; /* Højden på ikonerne */
+    transition: transform 0.3s ease; /* Glat forstørrelseseffekt ved hover */
+}
+
+/* Forstørrer ikonet lidt, når man holder musen over */
+.social-icons a img:hover {
+    transform: scale(1.1); /* Forstørrer ikonet */
+}
+
+/* Stilarter for en tekstbar */
+.text-bar {
+    background-color: #c0c2c2; /* Grå baggrundsfarve */
+    color: #000000; /* Sort tekstfarve */
+    text-align: center; /* Centerer teksten */
+    padding: 60px 20px 40px; /* Indsætter polstring for top, bund og sider */
+    position: relative; /* Tillader absolut placering af elementer inde i baren */
+}
+
+/* Styling for teksten inden for tekstbaren */
+.text-bar p {
+    margin-bottom: 20px; /* Mellemrum under afsnittet */
+    font-size: 18px; /* Skriftstørrelse */
+    max-width: 800px; /* Maksimal bredde for teksten */
+    margin-left: auto; /* Centerer teksten horisontalt */
+    margin-right: auto; /* Centerer teksten horisontalt */
+}
+
+/* Stilarter for et overliggende billede i tekstbaren */
+.text-bar .overlay-image {
+    position: absolute; /* Placerer billedet relativt til tekstbaren */
+    top: 0px; /* Placerer billedet øverst i tekstbaren */
+    left: 20%; /* Placerer billedet til venstre, ved 20% af barens bredde */
+    transform: translateX(-50%); /* Centerer billedet horisontalt */
+    width: px; /* Bredde (værdi mangler) */
+    height: auto; /* Automatisk højde for at bevare aspektforholdet */
+}
+
+/* Stilarter for billedgalleriet */
+.billede-container {
+    display: flex; /* Flexbox layout */
+    justify-content: center; /* Centerer billederne horisontalt */
+    gap: 90px; /* Mellemrum mellem billederne */
+    padding: 40px 20px; /* Indsætter polstring for top, bund og sider */
+    background-color: #ffffff; /* Hvid baggrundsfarve */
+}
+
+/* Stilarter for billederne i galleriet */
+.billede-container img {
+    width: 300px; /* Bredden på billederne */
+    height: auto; /* Automatisk højde for at bevare aspektforholdet */
+    border-radius: 5px; /* Rundede hjørner */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Tilføjer en svag skygge */
+    transition: transform 0.3s ease; /* Glat forstørrelseseffekt ved hover */
+}
+
+/* Forstørrer billedet lidt, når man holder musen over */
+.billede-container img:hover {
+    transform: scale(1.05); /* Forstørrer billedet */
+}
+
+/* Yderligere tekstfelter med forskellige baggrundsfarver */
+.text-bar2,
+.text-bar4,
+.text-bar5 {
+    text-align: center; /* Centerer teksten */
+    padding: 40px 20px; /* Indsætter polstring for top, bund og sider */
+    color: #000000; /* Sort tekstfarve */
+}
+
+/* Specifikke stilarter for text-bar2 */
+.text-bar2 {
+    background-color: #f25c24; /* Orange baggrundsfarve */
+    color: #ffffff; /* Hvid tekstfarve */
+}
+
+/* Stilarter for links i text-bar2 */
+.text-bar2 a {
+    color: #ffffff; /* Hvid tekstfarve for links */
+    text-decoration: none; /* Fjerner understregning */
+    font-weight: bold; /* Fed skrift */
+}
+
+/* Tilføjer understregning, når man holder musen over links i text-bar2 */
+.text-bar2 a:hover {
+    text-decoration: underline; /* Understregning ved hover */
+}
+
+/* Stilarter for footer (bundsektion) */
+.footer {
+    background-color: #d3d3d3; /* Lys grå baggrundsfarve */
+    padding: 20px; /* Indsætter polstring */
+}
+
+/* Stilarter for indholdet i footeren */
+.footer-content {
+    max-width: 1200px; /* Maksimal bredde på indholdet */
+    margin: 0 auto; /* Centerer indholdet i footeren */
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Placerer elementer jævnt mellem hinanden */
+    flex-wrap: wrap; /* Tillader elementerne at wrappe til en ny linje, hvis nødvendigt */
+    gap: 20px; /* Mellemrum mellem elementer */
+}
+
+/* Stilarter for venstre og højre side af footeren */
+.footer-left,
+.footer-right {
+    flex: 1 1 300px; /* Fleksible bredder med minimum 300px */
+}
+
+/* Stilarter for logoet i footeren */
+.footer-logo img {
+    width: 150px; /* Bredden på logoet */
+    height: auto; /* Automatisk højde for at bevare aspektforholdet */
+    margin-bottom: 10px; /* Mellemrum under logoet */
+}
+
+/* Stilarter for tekst i venstre og højre side af footeren */
+.footer-left p,
+.footer-right p {
+    margin-bottom: 10px; /* Mellemrum under afsnittet */
+    font-size: 14px; /* Skriftstørrelse */
+    color: #333333; /* Mørk grå tekstfarve */
+}
+
+/* Stilarter for links i den højre side af footeren */
+.footer-right a {
+    text-decoration: none; /* Fjerner understregning */
+    color: #000000; /* Sort tekstfarve */
+    margin-bottom: 10px; /* Mellemrum under hvert link */
+    display: block; /* Gør linkene til blokke */
+    transition: color 0.3s ease; /* Glat farveovergang ved hover */
+}
+
+/* Ændrer linkfarve, når man holder musen over */
+.footer-right a:hover {
+    color: #f25c24; /* Orange farve ved hover */
+}
+
+/* Stilarter for en container, der indeholder bokse */
+.box-container {
+    display: flex; /* Flexbox layout */
+    justify-content: center; /* Centerer boksene horisontalt */
+    gap: 20px; /* Lige mellemrum mellem boksene */
+    padding: 40px 0; /* Polstring for at give plads over og under boksene */
+    background-color: #ffffff; /* Baggrundsfarve for sektionen */
+}
+
+/* Stilarter for individuelle bokse */
+.box {
+    background-color: #f0f0f0; /* Lys grå baggrund for boksene */
+    padding: 20px; /* Polstring inde i boksen */
+    text-align: center; /* Centerer indholdet i boksen */
+    border-radius: 8px; /* Rundede hjørner */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Tilføjer en svag skygge */
+    flex: 1; /* Gør boksene lige brede */
+    max-width: 300px; /* Maksimal bredde for at forhindre dem i at blive for brede */
+}
+
+/* Stilarter for links inden i bokse */
+.box a {
+    color: #333333; /* Mørk grå tekstfarve */
+    text-decoration: none; /* Fjerner understregning */
+    font-weight: bold; /* Fed skrift */
+}
+
+/* Tilføjer understregning, når man holder musen over links i bokse */
+.box a:hover {
+    text-decoration: underline; /* Understregning ved hover */
+}
+
+/* Specifikke stilarter for en Facebook-boks */
+.facebook-box {
+    margin: 20px auto; /* Centrer boksen horisontalt */
+    max-width: 300px;  /* Maksimal bredde for boksen */
+}
+
+/* Specifikke stilarter for en bestemt boks (box1) */
+.box1 {
+    background-color: #a6a9a9; /* Lys grå baggrund */
+    padding: 20px; /* Polstring inde i boksen */
+    text-align: center; /* Centerer indholdet i boksen */
+    border-radius: 8px; /* Rundede hjørner */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Tilføjer en svag skygge */
+    flex: 1; /* Gør boksene lige brede */
+    max-width: 300px; /* Maksimal bredde for at forhindre dem i at blive for brede */
+    color: #0a0a0a; /* Tekstfarve sat til sort */
+}
+
+/* Stilarter for links i box1 */
+.box1 a {
+    color: #222; /* Mørk grå tekstfarve for links */
+    text-decoration: none; /* Fjerner understregning */
+    font-weight: bold; /* Fed skrift */
+}
+
+/* Specifikke stilarter for en bestemt boks (box2) */
+.box2 {
+    background-color: #37393b; /* Mørkegrå baggrund */
+    padding: 20px; /* Polstring inde i boksen */
+    text-align: center; /* Centerer indholdet i boksen */
+    border-radius: 8px; /* Rundede hjørner */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Tilføjer en svag skygge */
+    flex: 1; /* Gør boksene lige brede */
+    max-width: 300px; /* Maksimal bredde for at forhindre dem i at blive for brede */
+    color: #ffffff; /* Hvid tekstfarve */
+}
+
+/* Stilarter for links i box2 */
+.box2 a {
+    color: #ffffff; /* Hvid tekstfarve for links */
+    text-decoration: none; /* Fjerner understregning */
+    font-weight: bold; /* Fed skrift */
+}
+
+/* Yderligere linkstilarter, der ændrer linkfarven */
+.link2 a {
+    color: #f68054; /* Orange farve */
+    text-decoration: none; /* Fjerner understregning */
+    font-weight: bold; /* Fed skrift */
+}
+
+/* Yderligere tekstbar med specifikke baggrunds- og tekstfarver */
+.text-bar3 {
+    background-color: #414347; /* Mørkegrå baggrundsfarve */
+    color: #ffffff; /* Hvid tekstfarve */
+    text-align: center; /* Centerer teksten */
+    padding: 40px 20px; /* Tilføjer polstring omkring teksten */
+}
+
+/* Stilarter for Facebook-ikonet i text-bar3 */
+.text-bar3 .fb-icon {
+    width: 24px; /* Indstil bredden på Facebook-ikonet */
+    height: auto; /* Bevar aspektforholdet */
+    vertical-align: middle; /* Justerer ikonet med teksten */
+    margin-left: 10px; /* Plads mellem tekst og ikon */
+}
+
+/* Sørg for, at links i text-bar3 også er hvide */
+.text-bar3 a {
+    color: #ffffff; /* Hvid tekstfarve for links */
+    text-decoration: none; /* Ingen understregning for links */
+    font-weight: bold; /* Fed tekst */
+}
+
+/* Tilføjer understregning, når man holder musen over links i text-bar3 */
+.text-bar3 a:hover {
+    text-decoration: underline; /* Understregning ved hover */
+}
+
+/* Stilarter for kontaktformularen */
+.contact {
+    margin: 0; /* Fjerner margin */
+    padding: 0; /* Fjerner padding */
+    box-sizing: border-box; /* Inkluderer padding og border i elementers bredde/højde */
+    font-family: 'Poppins', sans-serif; /* Sætter skrifttypen til Poppins */
+}
+
+/* Indstiller body i kontaktsektionen til at fylde hele siden og centrere indholdet */
+.contact body {
+    display: flex; /* Flexbox layout */
+    justify-content: center; /* Centerer indholdet horisontalt */
+    align-items: center; /* Centerer indholdet vertikalt */
+    min-height: 100vh; /* Mindste højde på 100% af viewportens højde */
+    background: #f68054; /* Orange baggrundsfarve */
+}
+
+/* Stilarter for overskriften i kontaktsektionen */
+.contact h2 {
+    font-size: 40px; /* Størrelsen på overskriften */
+    color: #222; /* Mørk grå tekstfarve */
+    text-align: center; /* Centerer overskriften */
+    margin-bottom: 10px; /* Mellemrum under overskriften */
+}
+
+/* Stilarter for kontaktformularen */
+.contact form {
+    width: 600px; /* Formularens bredde */
+    text-align: center; /* Centerer formularens indhold */
+}
+
+/* Stilarter for inputfelterne i formularen */
+form .input-box {
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Lige mellemrum mellem inputfelterne */
+}
+
+/* Stilarter for individuelle inputfelter */
+.input-box .input-field {
+    width: 48.5%; /* Bredde på inputfelterne */
+}
+
+/* Stilarter for selve felterne i formularen */
+.field .item {
+    width: 100%; /* Gør felterne 100% brede */
+    padding: 10px; /* Indsætter polstring i felterne */
+    background: transparent; /* Gør baggrunden gennemsigtig */
+    border: 2px solid #f25c24; /* Orange kant */
+    outline: none; /* Fjerner standard kant ved fokus */
+    border-radius: 6px; /* Rundede hjørner */
+    font-size: 16px; /* Skriftstørrelse */
+    color: #222; /* Mørk grå tekstfarve */
+    margin: 12px 0; /* Mellemrum mellem felterne */
+}
+
+/* Ændrer kantfarven på felter, hvis der er fejl */
+.field.error .item {
+    border-color: #d93025; /* Rød kant ved fejl */
+}
+
+/* Stilarter for pladsholderteksten i felterne */
+.field .item::placeholder {
+    color: rgba(18, 18, 18, 0.8); /* Grå pladsholdertekst */
+}
+
+/* Stilarter for fejlmeddelelser */
+.field .error-txt {
+    font-size: 14.5px; /* Skriftstørrelse på fejlmeddelelser */
+    color: #d93025; /* Rød tekstfarve for fejl */
+    text-align: left; /* Justerer teksten til venstre */
+    margin: -5px 0 10px; /* Mellemrum omkring fejlmeddelelsen */
+    display: none; /* Skjuler fejlmeddelelsen som standard */
+}
+
+/* Viser fejlmeddelelsen, hvis der er fejl */
+.field.error .error-txt {
+    display: block; /* Viser fejlmeddelelsen */
+}
+
+/* Forhindrer resizing af tekstområde i formularen */
+form .textarea-field .item {
+    resize: none; /* Deaktiverer resizing */
+}
+
+/* Specifikke marginer for fejlmeddelelser i tekstområdet */
+form .textarea-field .error-txt {
+    margin-top: -10px; /* Mellemrum over fejlmeddelelsen */
+}
+
+/* Stilarter for knappen i formularen */
+form button {
+    padding: 12px 32px; /* Polstring omkring knappen */
+    background: #f68054; /* Orange baggrundsfarve */
+    border: none; /* Fjerner kant */
+    outline: none; /* Fjerner standard kant ved fokus */
+    border-radius: 6px; /* Rundede hjørner */
+    box-shadow: 0 0 10px #f25c24; /* Orange skygge */
+    font-size: 16px; /* Skriftstørrelse */
+    color: #222; /* Mørk grå tekstfarve */
+    letter-spacing: 1px; /* Mellemrum mellem bogstaver */
+    font-weight: 600; /* Gør skriften fed */
+    cursor: pointer; /* Viser en håndmarkør ved hover */
+    margin-top: 20px; /* Mellemrum over knappen */
+    transition: .5s; /* Glat overgangseffekt */
+}
+
+/* Fjerner skygge ved hover */
+form button:hover {
+    box-shadow: none; /* Ingen skygge ved hover */
+}

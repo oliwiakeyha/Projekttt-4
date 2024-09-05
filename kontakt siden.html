@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<!-- Angiver dokumenttypen som HTML5 -->
+<html lang="da">
+<!-- Starten på HTML-dokumentet, med sproget sat til dansk (da) -->
+
+<head>
+    <!-- Indeholder metadata og links til eksterne ressourcer -->
+    <meta charset="UTF-8">
+    <!-- Angiver tegnsætning som UTF-8 for at understøtte danske tegn -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Sikrer at siden vises korrekt på alle skærmstørrelser, især mobile -->
+    <title>Menu</title>
+    <!-- Titel, der vises i browserens faneblad -->
+    <link rel="stylesheet" href="kontakt.css">
+    <!-- Linker til en ekstern CSS-fil til styling af siden -->
+</head>
+
+<body>
+    <!-- Starten på sidens hovedindhold -->
+    <nav class="navbar">
+        <!-- Navigationselement med klassen "navbar" til styling -->
+        <img src="logo.png" alt="HAIR BY ANDERSEN Logo" class="logo">
+        <!-- Logo-billede med klassen "logo" til styling -->
+
+        <ul class="nav-links">
+            <!-- Uordnet liste (ul) til navigationslinks -->
+            <li><a href="#">OM</a></li>
+            <!-- Listeelement (li) med et link (a) til en sektion -->
+            <li><a href="#">PRISER</a></li>
+            <li><a href="#">TIDSBESTILLING</a></li>
+            <li><a href="#">BRUDEHÅR</a></li>
+            <li><a href="hår.html">HÅRSTYLING</a></li>
+            <li><a href="#">PRODUKTER</a></li>
+            <li><a href="#">ÅBNINGSTIDER & KONTAKT</a></li>
+        </ul>
+
+        <div class="contact-social">
+            <!-- En container til sociale medie ikoner -->
+            <a href="#"><img src="Skærmbillede 2024-08-28 kl. 12.32.48.png" alt="Facebook"></a>
+            <!-- Link til Facebook med et billede som ikon -->
+            <a href="#"><img src="Skærmbillede 2024-08-28 kl. 12.32.57.png" alt="Instagram"></a>
+            <!-- Link til Instagram med et billede som ikon -->
+            <a href="#"><img src="Skærmbillede 2024-08-28 kl. 12.33.03.png" alt="Pinterest"></a>
+            <!-- Link til Pinterest med et billede som ikon -->
+        </div>
+    </nav>
+
+    <div class="text-bar">
+        <!-- En container til tekst, her defineret som "text-bar" -->
+        <h1>ÅBNINGSTIDER:</h1>
+        <p>
+            <br>
+            Mandag - onsdag: kl. 9.00-17.30
+            Torsdag - fredag: kl. 9.00-19.00
+            Lørdag: 8.00-14.00 Søndag: LUKKET
+        </p>
+        <p>
+            HAIR BY ANDERSEN v/ Jan Andersen
+            Vintapperstræde 23, 5000 Odense C
+            Tlf. 2711 7099
+            mail@hair-byandersen.dk
+        </p>
+        <br>
+        <p><a href="https://www.google.dk/maps/place/Vintapperstr%C3%A6de+23,+5000+Odense/@55.395526,10.3815743,17z/data=!3m1!4b1!4m5!3m4!1s0x464cdff9c2952ae7:0x28c99ea618ebd0ea!8m2!3d55.395526!4d10.383763" target="_blank">Find os her</a></p>
+        <!-- Link til Google Maps, der åbner i en ny fane (target="_blank") -->
+    </div>
+
+    <section class="contact">
+        <!-- Sektion til kontaktformular -->
+        <h2>Kontakt os her!</h2>
+
+        <form action="#">
+            <!-- Formular til indsendelse af kontaktoplysninger -->
+            <div class="input-box">
+                <!-- Container til inputfelter -->
+                <div class="input-field field">
+                    <!-- Inputfelt for fuldt navn -->
+                    <input type="text" placeholder="Fulde Navn" id="name"
+                    class="item" autocomplete="off">
+                    <!-- Input med pladsholder, ID, og class for styling -->
+                    <div class="error-txt">Fulde navn skal udfyldes!</div>
+                    <!-- Fejlbesked, der vises hvis feltet ikke er udfyldt korrekt -->
+                </div>
+                <div class="input-field field">
+                    <input type="text" placeholder="E-mail adresse" id="email"
+                    class="item" autocomplete="off">
+                    <div class="error-txt email">E-mail skal udfyldes!</div>
+                </div>
+                <div class="input-field field">
+                    <input type="text" placeholder="Tlf Nummer" id="phone"
+                    class="item" autocomplete="off">
+                    <div class="error-txt">Tlf nummer skal udfyldes!</div>
+                </div>
+            </div>
+
+            <div class="input-box">
+                <div class="input-field field">
+                    <input type="text" placeholder="Emne" id="subject"
+                    class="item" autocomplete="off">
+                    <div class="error-txt">Emne skal udfyldes!</div>
+                </div>
+            </div>
+
+            <div class="textarea-field field">
+                <!-- Tekstområde til besked -->
+                <textarea name="" id="message" cols="30" rows="10" placeholder="Din Besked" class="item" autocomplete="off"></textarea>
+                <div class="error-txt">Besked skal udfyldes!</div>
+            </div>
+
+            <button type="submit">Send Besked</button>
+            <!-- Knappen til at indsende formularen -->
+        </form>
+    </section>
+
+    <img src="final-hair.png" alt="Billede over bjælken" class="overlay-image">
+    <!-- Et billede der fungerer som overlejring på siden -->
+
+    <div class="billede-container">
+        <!-- Container til billeder -->
+        <img src="hba_tegning-2020.jpg" alt="Billede 1">
+        <!-- Første billede med alternativ tekst -->
+        <img src="Faelles3-web.jpg" alt="Billede 2">
+        <!-- Andet billede med alternativ tekst -->
+        <img src="showthumb (1).jpeg" alt="Billede 3">
+        <!-- Tredje billede med alternativ tekst -->
+    </div>
+
+    <div class="text-bar2">
+        <!-- Yderligere tekst-sektion -->
+        <h3><a href="https://salonbook.one/?hair-byandersen#/" target="_blank">KLIK HER FOR ONLINE BOOKING</a></h3>
+        <!-- Link til online booking, der åbner i en ny fane -->
+    </div>
+
+    <!-- Box Container for Text and Facebook -->
+    <div class="box-container">
+        <!-- Container til forskellige bokse -->
+        <div class="box1">
+            <!-- Første boks med studierabat -->
+            <h3>20%<br> STUDIERABAT<br> PÅ KLIP </h3>
+            <p>- ved fremvisning af gyldigt studiekort (kan ikke kombineres med andre rabatter og tilbud)</p>
+        </div>
+        <div class="box2">
+            <!-- Anden boks med tilbud på hår-styling -->
+            <h3>FÅ STYLET NYT HÅR-LOOK FOR KUN 450 KR.</h3>
+            <p>Vi har udviklet 3 looks, som gør dig hår-klar til fx. et møde, en event eller fest, en særlig lejlighed eller bare til en god hår-dag.</p>
+            <div class="link2">
+                <a href="http://hair-byandersen.dk/dk/haarstyling-89/" target="_blank">LÆS MERE</a>
+                <!-- Link til yderligere information, åbner i ny fane -->
+            </div> <!-- Fixed the placement of closing div tag -->
+        </div>
+        <div class="box">
+            <div class="facebook-box">
+                <!-- Boks til Facebook side -->
+                <div class="fb-page" 
+                     data-href="https://www.facebook.com/HAIRbyAndersen" 
+                     data-tabs="timeline" 
+                     data-width="300" 
+                     data-height="300" 
+                     data-small-header="false" 
+                     data-adapt-container-width="true" 
+                     data-hide-cover="false" 
+                     data-show-facepile="true">
+                    <blockquote cite="https://www.facebook.com/HAIRbyAndersen" class="fb-xfbml-parse-ignore">
+                        <a href="https://www.facebook.com/HAIRbyAndersen">Your Facebook Page Name</a>
+                        <!-- Facebook plugin til at vise virksomhedens Facebook-side -->
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
